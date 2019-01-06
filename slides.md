@@ -1021,6 +1021,23 @@ enum Expr {
 }
 ```
 
+vvv
+
+```rust
+enum Expr {
+    Add(Box<Expr>, Box<Expr>),
+    Number(i32),
+    Ask,
+}
+```
+
+```rust
+let expr = Expr::Add(
+    Box::new(Expr::Number(5)),
+    Box::new(Expr::Ask),
+);
+```
+
 ```rust
 fn eval(&self) -> i32 {
     match self {
