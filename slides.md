@@ -280,6 +280,24 @@ print(v)
 
 ---
 
+## Sprzątanie
+
+Obiekt ma zawsze jednego właściciela.<br/>
+Gdy jest nim…
+
+* <span>…zmienna — obiekt ginie przy `}`</span>
+<!-- .element: class="fragment"  -->
+* <span>…inny obiekt — ginie wraz z nim</span>
+<!-- .element: class="fragment"  -->
+* <span>obiekt tymczasowy — ginie przy `;` lub `}`</span>
+<!-- .element: class="fragment"  -->
+
+<br/>
+### RAII
+<!-- .element: class="fragment"  -->
+
+---
+
 ## Klonowanie
 
 ```rust
