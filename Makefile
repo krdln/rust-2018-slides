@@ -17,6 +17,7 @@ slides.pdf: slides.md $(CONFS)
 	$(REVEAL) $(RFLAGS) --print $@ $<
 
 rendered: slides.md $(CONFS) $(STATIC_FILES)
+	rm -rf rendered
 	$(REVEAL) $(RFLAGS) --static $@ --static-dirs $(call comma-separated,$(STATIC_DIRS)) $<
 
 serve: slides.md $(CONFS)

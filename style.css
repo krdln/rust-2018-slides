@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Alfa Slab One";
     font-weight: 800;
-    src: local("Alfa Slab One Regular"), local("AlfaSlabOne-Regular"), url("/alfa-slab/AlfaSlabOne-Regular.ttf");
+    src: local("Alfa Slab One Regular"), local("AlfaSlabOne-Regular"), url("../alfa-slab/AlfaSlabOne-Regular.ttf");
     font-display: block;
 }
 
