@@ -429,10 +429,10 @@ fn something(a: &mut Vec<u8>, b: &Vec<u8>, c: Vec<u8>) {
     // ...
 }
 
-do_something(&mut a, &b, c);
+something(&mut a, &b, c);
 
 let r = &b;
-do_something(&mut a, r, c);
+something(&mut a, r, c);
 ```
 
 ---
@@ -626,7 +626,7 @@ let ref2 = &shared;
 
 ref2.set(42);
 
-println!("{}", ref1); // 42
+println!("{}", ref1.get()); // 42
 ```
 
 <br/>
@@ -847,13 +847,13 @@ fn quack_twice(quacker: impl Quack) {
 ```
 
 ```rust
-fn quack_twice<Q: Quacker>(quacker: Quack) {
+fn quack_twice<Q: Quacker>(quacker: Q) {
     // ...
 }
 ```
 
 ```
-fn quack_twice<Q>(quacker: Quack)
+fn quack_twice<Q>(quacker: Q)
 where Q: Quack {
     // ...
 }
@@ -910,8 +910,8 @@ typ bezkarnie kopiowalny
 
 ```rust
 let x = 1;
-let copy1 = a;
-let copy2 = a;
+let copy1 = x;
+let copy2 = x;
 ```
 
 <br/>
@@ -1006,7 +1006,7 @@ pętle też!
 let awesome = loop {
     let thing = get_thing()
     if thing.is_awesome() {
-        break awesome;
+        break thing;
     }
 };
 ```
@@ -1047,7 +1047,7 @@ enum Option<T> {
 ```rust
 enum Result<T, E> {
     Ok(T),
-    Err(T),
+    Err(E),
 }
 ```
 
@@ -1061,14 +1061,14 @@ fn get_answer() -> Result<String, io::Error> {
         Ok(a) => a,
         Err(e) => return Err(e),
     };
-    format("answer is {}", answer);
+    format("answer is {}", answer)
 }
 ```
 
 ```rust
 fn get_answer() -> Result<String, io::Error> {
     let answer = fs::read_to_string("answer.txt")?;
-    format("answer is {}", answer);
+    format("answer is {}", answer)
 }
 ```
 
