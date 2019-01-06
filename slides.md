@@ -158,7 +158,7 @@ vvv
     * bez tego trudno o unikalny dostęp
 
 Note:
-W scenariuszu jednowątkowym: w wypadku "bezpiecznych" języków
+W scenariuszu jednowątkowym: w wypadku „bezpiecznych” języków
 jesteśmy po prostu zdziwieni (albo mamy błąd logiczny), bo
 ktoś nam zmodyfikował obiekt pod nosem.
 
@@ -221,7 +221,7 @@ vvv
 
 <small>(implementacja)</small>
 
-### "Move is always `memcpy`"
+### „Move is always `memcpy`”
 
 ![copy](pics/2-1-move-impl.png)
 <!-- .element: class="naked medium"  -->
@@ -231,7 +231,7 @@ vvv
 ![copy](pics/2-1-move-impl.png)
 <!-- .element: class="naked medium"  -->
 
-* `memcpy`, ale "płytkie"
+* `memcpy`, ale „płytkie”
 * protsze życie dla kompilatora
 * proste optymalizacje typu RVO
 * jako zwykli użytkownicy nie musimy o tym myśleć <!-- .element: class="fragment"  -->
@@ -404,7 +404,7 @@ do modyfikacji
 
 <b>zakazuje:</b><br/>
 przesuwania (w tym niszczenia)</br>
-<small>(ale można "szybko podmienić")</small>
+<small>(ale można „szybko podmienić”)</small>
 
 <b>zapewnia:</b></br/>
 unikalność dostępu
@@ -511,7 +511,7 @@ vvv
 
 <!-- .slide: data-transition="zoom"  -->
 
-### “Lifetimes”
+### „Lifetimes”
 
 Czas życia, ale czego?
 
@@ -521,7 +521,7 @@ Czas życia, ale czego?
 `&'a T`
 <!-- .element: class="fragment"  -->
 
-<p>`'a` — “kontekst pożyczki”</p>
+<p>`'a` — „kontekst pożyczki”</p>
 <!-- .element: class="fragment"  -->
 
 vvv
@@ -644,7 +644,7 @@ vvv
 
 ### `RefCell<T>`
 
-“Runtime borrow checker”
+„Runtime borrow checker”
 
 Dostęp poprzez `borrow` i `borrow_mut`.
 
@@ -1160,7 +1160,7 @@ assert_eq!(double!(a), 6)
 
 vvv
 
-### “macro by example”
+### „macro by example”
 
 ```rust
 macro_rules! map {
@@ -1280,7 +1280,7 @@ Nie wszystkie wzorce dają się łatwo przetłumaczyć
 
 vvv
 
-#### “Programowanie obiektowe”
+#### „Programowanie obiektowe”
 
 <!-- .slide: data-background="#322"  -->
 * Wirtualne hierarchie klas
