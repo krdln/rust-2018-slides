@@ -529,29 +529,27 @@ vvv
 <!-- .slide: data-transition="zoom"  -->
 
 ```rust
-fn split<'a>(s: &'a str, bad: &'a str) -> HashSet<&'a str> {
-    s.split_whitespace()
-        .filter(|&s| s != bad)
-        .collect()
+fn choose<'a>(left: &'a str, right: &'a str) -> &'a str {
+    if flip_a_coin() { left } else { right }
 }
 
 fn main() {
-    let data = get_some_words();
-    let mut bad = get_bad_word();
-    let words = split(&data, &bad);
+    let good = get_good_string();
+    let mut bad = get_bad_string();
+    let chosen = choose(&good, &bad);
 
     bad.clear();
-    println!("{:?}", words);
+    println!("{:?}", chosen);
 }
 ```
 
-<small>`split::<'{pożyczone: data i bad}>(&data, &bad);`</small>
+<small>`split::<'{pożyczone: good i bad}>(&good, &bad);`</small>
 <!-- .element: class="fragment"  -->
 <br/>
-<small>`word: HashSet<&str>`</small>
+<small>`chosen: &str`</small>
 <br/>
 <!-- .element: class="fragment"  -->
-<small>`word: HashSet<&'{pożyczone: data i bad} str>`</small>
+<small>`chosen: &'{pożyczone: good i bad} str`</small>
 <!-- .element: class="fragment"  -->
 
 Note: NLL zmieniło algorytm na trochę bardziej zaawansowany
