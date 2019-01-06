@@ -425,15 +425,38 @@ vvv
 #### Referencje jako argumenty
 
 ```rust
-fn something(a: &mut Vec<u8>, b: &Vec<u8>, c: Vec<u8>) {
-    // ...
+fn f(
+    a: &mut Vec<u8>,
+    b: &Vec<u8>,
+    c: &Vec<u8>,
+    d: Vec<u8>,
+) {
+    /* ... */
 }
 
-something(&mut a, &b, c);
-
-let r = &b;
-something(&mut a, r, c);
+let mut v = vec![1];
+let w = vec![2, 3];
+let r = &w;
+let z = vec![4, 5, 6];
+f(&mut v, &w, r, z);
 ```
+
+vvv
+
+```rust
+fn f(a: &mut Vec<u8>, b: &Vec<u8>, c: &Vec<u8>, d: Vec<u8>) {
+    /* ... */
+}
+
+let mut v = vec![1];
+let w = vec![2, 3];
+let r = &w;
+let z = vec![4, 5, 6];
+f(&mut v, &w, r, z);
+```
+
+![argument passing](pics/2-2-arguments.png)
+<!-- .element: class="naked medium"  -->
 
 ---
 
