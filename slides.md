@@ -6,8 +6,8 @@ revealOptions:
     transition: 'slide'
 ---
 
-<img class="naked left-cornered" src="rust-logo-white.svg"/>
-<!-- <img class="naked right-cornered" src="codi-logo-white.svg"/> -->
+<img class="naked left-cornered" src="pics/rust-logo-white.svg"/>
+<!-- <img class="naked right-cornered" src="pics/codi-logo-white.svg"/> -->
 # Rust
 
 #### fast · reliable · productive <br/> pick three
@@ -16,7 +16,7 @@ revealOptions:
 
 Michał Krasnoborski
 <br/>
-<small>Codilime TechTalk <img class="naked inline-logo" src="codi-logo-white.svg"/> 11 grudnia 2018</small>
+<small>Codilime TechTalk <img class="naked inline-logo" src="pics/codi-logo-white.svg"/> 11 grudnia 2018</small>
 
 vvv
 
