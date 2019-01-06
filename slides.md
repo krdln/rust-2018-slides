@@ -1253,6 +1253,9 @@ z czasem zauważamy błędy<br/>zanim zrobi to kompilator
 ... to raczej ściana
 <!-- .element: class="fragment"  -->
 
+<small>niespecjalnie wysoka, ale napotykamy ją na samym początku</small>
+<!-- .element: class="fragment"  -->
+
 vvv
 
 <!-- .slide: data-background="#322"  -->
