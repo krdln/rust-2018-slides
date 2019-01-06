@@ -26,9 +26,13 @@ serve: slides.md $(CONFS)
 clean:
 	rm -f rendered
 
+init:
+	npm install reveal-md
+	$(MAKE) disable-embedding
+
 disable-embedding:
 	sed 's|\(markdown = markdown.replace(imgMarkdown, `!\[$${imgTitle\}]($${dataUri})`);\)|// \1|' \
 		-i node_modules/reveal-md/lib/static.js
 
-.PHONY: default serve clean disable-embedding
+.PHONY: default serve clean disable-embedding init
 
