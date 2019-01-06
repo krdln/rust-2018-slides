@@ -1206,6 +1206,9 @@ trait Iterator {
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
+<p><small>`SplitWhitespace::next` wywoła się dokładnie 3 razy</small></p>
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
 vvv
 
 ```rust
