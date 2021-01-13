@@ -1619,10 +1619,6 @@ Slajdy pojawią się na `github.com/krdln/rust-2018-slides`
 Learn more: https://www.rust-lang.org
 </small>
 <!-- .element: class="fragment"  -->
-<small>
-Zapraszamy na piwo, pizzę i do wypełnienia ankiet!
-</small>
-<!-- .element: class="fragment"  -->
 
 <br/>
 <br/>
