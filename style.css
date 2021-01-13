@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Alfa Slab One";
+    font-weight: 800;
+    src: local("Alfa Slab One Regular"), local("AlfaSlabOne-Regular"), url("../alfa-slab/AlfaSlabOne-Regular.ttf");
+    font-display: block;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    text-transform: none !important;
+    font-family: 'Fira Sans', 'Ubuntu', sans-serif;
+}
+
+.reveal h1 {
+    font-family: 'Alfa Slab One', 'Fira Sans', 'Ubuntu', sans-serif;
+}
+
+.reveal {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.reveal code {
+    font-size: 100% !important;
+}
+
+img.smol {
+    width: 30% !important;
+}
+
+img.medium {
+    width: 60% !important;
+}
+
+img.cargo-sized {
+    height: 30% !important;
+}
+
+img.naked {
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+img.left-cornered {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5em;
+}
+
+img.right-cornered {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3em;
+}
+
+img.inline-logo-big {
+    height: 2em;
+    position: relative;
+    top: 0.7em;
+}
+
+img.inline-logo {
+    height: 0.7em;
+    position: relative;
+    top: 0.3em;
+}
